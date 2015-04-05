@@ -34,9 +34,9 @@ coffee: $(NODE_TARGETS)
 devdeps:
 	sudo apt-get install -y mongodb elasticsearch
 	go get -v github.com/codegangsta/gin/...
-	go get -v github.com/smartystreets/goconvey/...
 
 godeps:
+	go get -v github.com/smartystreets/goconvey/...
 	go get -v launchpad.net/godeps
 
 sysdeps: devdeps godeps
